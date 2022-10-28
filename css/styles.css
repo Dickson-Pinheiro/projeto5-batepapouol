@@ -33,6 +33,53 @@ main {
     height: 100vh;
     padding-top: 80px;
     padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mensagens {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    height: calc(100vh - 160px);
+    padding-top: 26px;
+    overflow: auto;
+}
+
+.mensagem {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+}
+
+.status {
+    background-color: #DCDCDC;
+}
+
+.reservado {
+    background-color: #FFDEDE;
+}
+
+.publico {
+    background-color: #FFFFFF;
+}
+
+span {
+    margin-right: 6px;
+    display: inline-block;
+    color: #aaaaaa;
+
+}
+
+.bold {
+    font-weight: 700;
+    margin: 0;
+    color: #000000;
 }
 
 footer {
@@ -63,4 +110,10 @@ footer button {
 
 footer button ion-icon {
     cursor: pointer;
+}
+
+@media (min-width: 635px){
+    .mensagens {
+        width: calc(80% + 34px);
+    }
 }
