@@ -45,7 +45,12 @@ main {
     width: 100%;
     height: calc(100vh - 160px);
     padding-top: 26px;
+    padding-bottom: 26px;
     overflow: auto;
+}
+
+.mensagens::-webkit-scrollbar {
+    display: none;
 }
 
 .mensagem {
