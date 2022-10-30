@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -62,6 +63,10 @@ main {
     color: #000000;
 }
 
+.mensagem p {
+    width: 90%;
+}
+
 .status {
     background-color: #DCDCDC;
 }
@@ -116,6 +121,128 @@ footer button {
 footer button ion-icon {
     cursor: pointer;
 }
+
+.menuLateral {
+    display: flex;
+    top: 0;
+    left: 100vw;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    transition: 100ms;
+}
+
+.contentMenu {
+    width: 70%;
+    max-width: 360px;
+    background-color: #FFFFFF;
+}
+
+.contentMenu .tituloMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 84px;
+    width: 100%;
+    text-align: center;
+}
+
+.contentMenu h1 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.blur {
+    height: 100vh;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.activePeople {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding-left: 17px;
+    height: 140px;
+    overflow-y: auto;
+}
+
+/*.activePeople::-webkit-scrollbar {
+    width: 12px;               
+  }
+  */
+  .activePeople::-webkit-scrollbar-track {
+    background: #ffffff;        /* color of the tracking area */
+  }
+  
+  .activePeople:-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */    /* roundness of the scroll thumb */
+    border: 3px solid orange;  /* creates padding around scroll thumb */
+  }
+
+
+
+.people {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+}
+
+.people img {
+    width: 24px;
+}
+
+.people p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.showMenuLateral {
+    left: 0;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.people ion-icon {
+    position: absolute;
+    right: 8px;
+    font-weight: 700;
+    color: transparent;
+    font-size: 18px;
+}
+
+.selected {
+    color: #28BB25!important;
+}
+
+.tituloVisibilidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 66px;
+    width: 100%;
+    text-align: center;
+}
+
+.visibilidade people img {
+    width: 15px;
+}
+
+.visibilidade {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding-left: 13px;
+}
+
+
 
 @media (min-width: 635px){
     .mensagens {

@@ -14,7 +14,7 @@
 <body>
     <header>
         <img src="./images/logo.png" />
-        <img src="./images/icon-header.svg" />
+        <img src="./images/icon-header.svg" class="buttonMenu"/>
     </header>
     <main>
         <div class="mensagens">
@@ -27,6 +27,31 @@
             <ion-icon name="paper-plane-outline"></ion-icon>
         </button>
     </footer>
+    <div class="menuLateral">
+        <div class="blur"></div>
+        <div class="contentMenu">
+            <div class="tituloMenu">
+                <h1>Escolha um contato <br/>para enviar mensagem:</h1>
+            </div>
+            <div class="activePeople">
+            </div>
+            <div class="tituloVisibilidade">
+                <h1>Escolha a visibilidade:</h1>
+            </div>
+            <div class="visibilidade">
+                <div class="people" onclick="addSelectionVisibilidade(this)">
+                    <img src="./images/open.svg">
+                    <p>Público</p>
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+                <div class="people" onclick="addSelectionVisibilidade(this)">
+                    <img src="./images/open.svg">
+                    <p>Reservadamente</p>
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="./js/script.js"></script>
